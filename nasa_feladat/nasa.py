@@ -10,10 +10,10 @@ def beolvas():
 def leggyakoribb_ho():
     eloford = beolvas()
     osszeg = sum(eloford)
-    return [find_max(eloford, osszeg) for _ in range(3)]
+    return [max_kereses(eloford, osszeg) for _ in range(3)]
 
 
-def find_max(elofordulasok, osszeg):
+def max_kereses(elofordulasok, osszeg):
     max_honap = 0
     jelenlegi_max = 0
     for i in range(len(elofordulasok)):
